@@ -1,6 +1,6 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Resolução do desafio do BootCamp Java Ifood da Digital Inovation One.
 
 ## Folder Structure
 
