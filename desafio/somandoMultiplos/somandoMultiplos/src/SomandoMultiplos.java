@@ -5,17 +5,19 @@ public class SomandoMultiplos {
         int A, N;
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Digite o valor de A:");
+        //System.out.print("Digite o valor de A:");
         A = input.nextInt();
-        System.out.print("Digite o valor de N:");
+        //System.out.print("Digite o valor de N:");
         N = input.nextInt();
         
-        int soma = A;
-        int cont = A;
-        while(cont <= N){
+        int soma = 0;
+        int total = 0;
+        while(soma < N){
             soma = soma + A;
-            cont = cont + A;
+            total = total + soma;
+            //System.out.println("soma = "+soma);
+            //System.out.println("total = "+total);
         }
-        System.out.println(soma);
+        System.out.println(total);
     }
 }
