@@ -4,7 +4,8 @@ public class ChamadaRecursiva {
     public static void main(String[] args) throws Exception {
         Scanner numero = new Scanner(System.in);
         int somar = somatorio(numero.nextInt());
-        System.out.println(somar);       
+        System.out.println(somar);
+        numero.close();       
     }
    
     //metodo para calcular somatorio:

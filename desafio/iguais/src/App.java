@@ -7,6 +7,7 @@ public class App {
         int A = scan.nextInt();
         System.out.println("digite o valor de B:");
         int B = scan.nextInt();
+        scan.close();
 
         if( A == B){
             System.out.println("Sao iguais!");

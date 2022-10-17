@@ -9,6 +9,7 @@ public class SomandoMultiplos {
         A = input.nextInt();
         //System.out.print("Digite o valor de N:");
         N = input.nextInt();
+        input.close();
         
         int soma = 0;
         int total = 0;

@@ -12,6 +12,7 @@ public class BuscaSequencial {
         }else{
             System.out.println("Numero "+numero+" nao encontrado! ");
         }
+        leitor.close();
     }
     
     public static int buscarSequencial(int numero, int elementos[]){

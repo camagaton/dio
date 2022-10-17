@@ -6,6 +6,7 @@ public class FizzBuzz {
         //System.out.print("digite um numero: ");
         int num = number.nextInt();
         responder(num);
+        number.close();
     }
 
     static void responder(int num){
