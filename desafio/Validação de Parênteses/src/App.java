@@ -11,6 +11,23 @@ public class App {
 
     public static boolean ehValido(String s) {
         //TODO: implemente a lógica de caracteres válidos e retorne se a string é valida ou não.
+        if(s.isEmpty()){
+            return false;
+        }
+        
+        if((s.charAt(0) == '(') && (s.charAt(s.length())== ')')){
+            return true;
+        }
+
+        if((s.charAt(0) == '[') && (s.charAt(s.length())== ']')){
+            return true;
+        }
+
+        if((s.charAt(0) == '{') && (s.charAt(s.length())== '}')){
+            return true;
+        }
+        return false;
+
     }
 
 
