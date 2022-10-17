@@ -9,23 +9,20 @@ public class App {
         scanner.close();
     }
 
-    public static boolean ehValido(String s) {
-        //TODO: implemente a lógica de caracteres válidos e retorne se a string é valida ou não.
-        if(s.isEmpty()){
-            return false;
+    public static boolean ehValido(String s) throws StringIndexOutOfBoundsException {
+        int tamanho = s.length();
+        //testa parenteses       
+        if((s.charAt(0) == '(') && (s.charAt(tamanho - 1) == ')')){
+            return true;            
         }
-        
-        if((s.charAt(0) == '(') && (s.charAt(s.length())== ')')){
-            return true;
+        //testa colchetes
+        if((s.charAt(0) == '[') && (s.charAt(tamanho - 1) == ']')){
+            return true;            
         }
-
-        if((s.charAt(0) == '[') && (s.charAt(s.length())== ']')){
-            return true;
-        }
-
-        if((s.charAt(0) == '{') && (s.charAt(s.length())== '}')){
-            return true;
-        }
+        //testa chaves
+        if((s.charAt(0) == '{') && (s.charAt(tamanho - 1) == '}')){
+            return true;            
+        }      
         return false;
 
     }
