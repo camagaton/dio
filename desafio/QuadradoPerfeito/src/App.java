@@ -31,8 +31,6 @@ public class App {
          }
          mesmoQuadrado--;
      }
-
-
      System.out.println(count);
     }
     
