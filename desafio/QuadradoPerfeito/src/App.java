@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-      int n = Integer.parseInt(new Scanner(System.in).nextLine());
+      Scanner sc = new Scanner(System.in); 
+      int n = sc.nextInt();
+      sc.close();
       int count=0;
       int count2=0;
       int teste=0;
-
       int n2 = n;
       while(n2!=0) {
          int quadrado = (int) Math.sqrt(n2); 
