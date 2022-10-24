@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class FatorialDesajeitado{
     public static int calcular(int N) {
         int resultado = 0, cur = N, j = 0;
@@ -21,7 +23,10 @@ class FatorialDesajeitado{
 
 public class App {
     public static void main(String[] args) {
-        int n = new java.util.Scanner(System.in).nextInt();
-        System.out.println(FatorialDesajeitado.calcular(n));
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            sc.close();
+            System.out.println(FatorialDesajeitado.calcular(n));
+        }
     }
 }
